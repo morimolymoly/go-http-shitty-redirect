@@ -1,0 +1,13 @@
+version: '3'
+services:
+  server:
+    container_name: go-http-shitty-redirect
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    volumes:
+      - ".:/go/src/github.com/morimolymoly/go-http-shitty-redirect"
+    command: go run /go/src/github.com/morimolymoly/go-http-shitty-redirect/src/main.go
+    restart: unless-stopped
