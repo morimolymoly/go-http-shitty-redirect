@@ -2,7 +2,6 @@
 
 ## Usage
 ```
-make build
 make up
 ```
 
