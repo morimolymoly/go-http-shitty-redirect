@@ -1,5 +1,11 @@
 # go-http-shitty-redirect
 
+## Usage
+```
+make build
+make up
+```
+
 ## `http://localhost:8080/ok`
 ```
 ☻  http --follow --all http://localhost:8080/ok
